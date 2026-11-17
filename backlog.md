@@ -5,7 +5,7 @@
 - **EFS-02 (owner: antigravity, durum: done):** `node --test tests/sponsorluk.test.mjs` (`7/7` PASS) ve yerel `127.0.0.1:8785` Playwright kontrolleri (`1440x900`, `390x844`, `?musteri=1`, tam 3 sayfa A4 PDF export `reports/erciyes-fm-sunum-ornek.pdf`) eksiksiz doğrulandı.
 
 ## Aktif / Kapanış Görevi
-- **EFS-03 (owner: antigravity, durum: in_progress):** Git deposu + `MuhammedTahir0/erciyes-fm-sponsorluk` GitHub `origin/main` push ve TahirOS hafıza kapanışı (`00_GENEL_BAKIS.md`..`03_YAPILANLAR.md`, `Last-Session.md`, `sync`, `receipt`).
+- **EFS-03 (owner: antigravity, durum: done):** Git deposu başlatıldı (`9960c40`), GitHub `https://github.com/MuhammedTahir0/erciyes-fm-sponsorluk` (`origin/main`) push edildi; TahirOS hafıza kapanışı tamamlandı.
 
 ## Devam noktası
-Başlatan ajan: antigravity. GitHub yayını ve TahirOS hafıza kapanışı yapılıyor (2026-11-17).
+Başlatan ajan: antigravity. İlk sürüm (`EFS-01`..`EFS-03`) tamamlandı ve doğrulandı (2026-11-17). Vercel dağıtımı talep edilirse `vercel --prod` ile yayına alınabilir.
