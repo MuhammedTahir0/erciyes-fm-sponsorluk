@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Erciyes FM Yayın Sponsorluk Sunum Dosyası, Tematik Radyo Program Akışı ve İnteraktif Sponsorluk Teklif Platformu — Sunucu: Nur Kandır, Menajer: Emine Işık">
+  <title>Erciyes FM — Yayın Sponsorluk Sunum Dosyası</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./app.js"></script>
+</head>
+<body data-view="vitrin">
+  <!-- Shared Studio Artwork Symbol (kept non-display:none so <use> renders in screen & print) -->
+  <svg class="svg-symbol-store" aria-hidden="true" focusable="false">
+    <defs>
+      <radialGradient id="onAirGlow" cx="28%" cy="18%" r="48%">
+        <stop offset="0%" stop-color="#ff6b2b" stop-opacity="0.58"/>
+        <stop offset="45%" stop-color="#d95820" stop-opacity="0.22"/>
+        <stop offset="100%" stop-color="#13100e" stop-opacity="0"/>
+      </radialGradient>
+      <linearGradient id="wallGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#171210"/>
+        <stop offset="55%" stop-color="#1e1714"/>
+        <stop offset="100%" stop-color="#0d0b0a"/>
+      </linearGradient>
+      <linearGradient id="deskGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#6e3f22"/>
+        <stop offset="48%" stop-color="#532d17"/>
+        <stop offset="100%" stop-color="#2b170b"/>
+      </linearGradient>
+      <linearGradient id="micBodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#3c4252"/>
+        <stop offset="50%" stop-color="#1f2430"/>
+        <stop offset="100%" stop-color="#0f131a"/>
+      </linearGradient>
+      <linearGradient id="micRimGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#f59e56"/>
+        <stop offset="100%" stop-color="#9b4c1d"/>
+      </linearGradient>
+      <linearGradient id="mixerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#262c3a"/>
+        <stop offset="100%" stop-color="#11151d"/>
+      </linearGradient>
+    </defs>
+
+    <symbol id="erciyes-studio-scene" viewBox="0 0 560 660">
+      <!-- Dark acoustic studio backdrop -->
+      <rect width="560" height="660" fill="url(#wallGrad)"/>
+      <rect width="560" height="660" fill="url(#onAirGlow)"/>
+
+      <!-- Acoustic wall slats -->
+      <g opacity="0.22" fill="#090807">
+        <rect x="28" y="0" width="14" height="440"/>
+        <rect x="56" y="0" width="14" height="440"/>
+        <rect x="84" y="0" width="14" height="440"/>
+        <rect x="442" y="0" width="14" height="440"/>
+        <rect x="470" y="0" width="14" height="440"/>
+        <rect x="498" y="0" width="14" height="440"/>
+      </g>
+
+      <!-- Warm ON AIR lightbox -->
+      <g transform="translate(24, 38) rotate(-5)">
+        <rect x="0" y="0" width="218" height="72" rx="10" fill="#180d08" stroke="#e46028" stroke-width="3.5"/>
+        <rect x="6" y="6" width="206" height="60" rx="7" fill="#2c1108" stroke="#ff8d52" stroke-width="1" opacity="0.9"/>
+        <text x="109" y="48" text-anchor="middle" fill="#ff9e66" font-family="Segoe UI, Arial, sans-serif" font-size="36" font-weight="800" letter-spacing="4">ON AIR</text>
+      </g>
+
+      <!-- Studio monitor hint on right -->
+      <rect x="458" y="108" width="102" height="196" rx="8" fill="#111927" stroke="#25344d" stroke-width="2"/>
+      <rect x="468" y="122" width="84" height="168" rx="4" fill="#17243a"/>
+      <g fill="#38bdf8" opacity="0.45">
+        <rect x="478" y="144" width="60" height="8" rx="4"/>
+        <rect x="478" y="162" width="42" height="6" rx="3"/>
+        <rect x="478" y="182" width="64" height="22" rx="4" fill="#d46a2e" opacity="0.8"/>
+        <rect x="478" y="216" width="54" height="6" rx="3"/>
+        <rect x="478" y="232" width="62" height="6" rx="3"/>
+      </g>
+
+      <!-- Walnut studio table -->
+      <polygon points="0,425 560,365 560,660 0,660" fill="url(#deskGrad)"/>
+      <line x1="0" y1="425" x2="560" y2="365" stroke="#995b34" stroke-width="2" opacity="0.55"/>
+      <g opacity="0.16" stroke="#1b0d05" stroke-width="2">
+        <line x1="0" y1="470" x2="560" y2="412"/>
+        <line x1="0" y1="535" x2="560" y2="478"/>
+        <line x1="0" y1="600" x2="560" y2="544"/>
+      </g>
+
+      <!-- Audio interface / desk gear background -->
+      <g transform="translate(362, 336) skewY(-6)">
+        <rect x="0" y="0" width="128" height="46" rx="6" fill="#1a1f29" stroke="#394152" stroke-width="1.5"/>
+        <circle cx="24" cy="23" r="8" fill="#0f131a" stroke="#7c8798" stroke-width="1.5"/>
+        <circle cx="48" cy="23" r="8" fill="#0f131a" stroke="#7c8798" stroke-width="1.5"/>
+        <circle cx="72" cy="23" r="8" fill="#0f131a" stroke="#7c8798" stroke-width="1.5"/>
+        <circle cx="102" cy="18" r="4" fill="#22c55e"/>
+        <circle cx="114" cy="18" r="4" fill="#f59e0b"/>
+      </g>
+
+      <!-- Podcast / Broadcast Mixer Console on desk -->
+      <g transform="translate(302, 412) rotate(-7)">
+        <rect x="0" y="0" width="198" height="128" rx="12" fill="url(#mixerGrad)" stroke="#3e4758" stroke-width="2"/>
+        <!-- Faders -->
+        <g stroke="#4b5563" stroke-width="3" stroke-linecap="round">
+          <line x1="26" y1="26" x2="26" y2="104"/>
+          <line x1="50" y1="26" x2="50" y2="104"/>
+          <line x1="74" y1="26" x2="74" y2="104"/>
+          <line x1="98" y1="26" x2="98" y2="104"/>
+        </g>
+        <g fill="#d1d5db">
+          <rect x="19" y="52" width="14" height="10" rx="2"/>
+          <rect x="43" y="38" width="14" height="10" rx="2"/>
+          <rect x="67" y="64" width="14" height="10" rx="2"/>
+          <rect x="91" y="45" width="14" height="10" rx="2"/>
+        </g>
+        <!-- Illuminated sound pads -->
+        <rect x="122" y="24" width="26" height="22" rx="4" fill="#ef4444" opacity="0.88"/>
+        <rect x="155" y="24" width="26" height="22" rx="4" fill="#f59e0b" opacity="0.9"/>
+        <rect x="122" y="54" width="26" height="22" rx="4" fill="#38bdf8" opacity="0.85"/>
+        <rect x="155" y="54" width="26" height="22" rx="4" fill="#22c55e" opacity="0.85"/>
+        <rect x="122" y="84" width="26" height="22" rx="4" fill="#a855f7" opacity="0.85"/>
+        <rect x="155" y="84" width="26" height="22" rx="4" fill="#fb923c" opacity="0.9"/>
+      </g>
+
+      <!-- Studio Headphones #1 (upper desk left) -->
+      <g transform="translate(86, 405)">
+        <ellipse cx="95" cy="48" rx="82" ry="26" fill="#0d0806" opacity="0.45"/>
+        <path d="M22,42 C22,-4 156,-4 156,42" fill="none" stroke="#181c24" stroke-width="14" stroke-linecap="round"/>
+        <ellipse cx="26" cy="44" rx="22" ry="26" fill="#1b202b" stroke="#363e4f" stroke-width="2"/>
+        <ellipse cx="150" cy="44" rx="22" ry="26" fill="#1b202b" stroke="#363e4f" stroke-width="2"/>
+        <ellipse cx="26" cy="44" rx="12" ry="15" fill="#10131a"/>
+        <ellipse cx="150" cy="44" rx="12" ry="15" fill="#10131a"/>
+        <path d="M152,66 C188,82 225,86 244,72" fill="none" stroke="#11141a" stroke-width="5" stroke-linecap="round"/>
+      </g>
+
+      <!-- Studio Headphones #2 (foreground desk) -->
+      <g transform="translate(154, 492) rotate(8)">
+        <ellipse cx="92" cy="52" rx="84" ry="24" fill="#0d0806" opacity="0.5"/>
+        <path d="M24,44 C26,2 156,4 158,44" fill="none" stroke="#1e232e" stroke-width="15" stroke-linecap="round"/>
+        <ellipse cx="26" cy="48" rx="24" ry="28" fill="#141821" stroke="#475166" stroke-width="2"/>
+        <ellipse cx="156" cy="48" rx="24" ry="28" fill="#141821" stroke="#475166" stroke-width="2"/>
+        <ellipse cx="26" cy="48" rx="13" ry="16" fill="#0b0d12"/>
+        <ellipse cx="156" cy="48" rx="13" ry="16" fill="#0b0d12"/>
+      </g>
+
+      <!-- Articulated Boom Arm & Broadcast Microphone -->
+      <g>
+        <!-- Upper boom arm from top right -->
+        <line x1="470" y1="0" x2="365" y2="112" stroke="#12161f" stroke-width="18" stroke-linecap="round"/>
+        <line x1="470" y1="0" x2="365" y2="112" stroke="#2c3342" stroke-width="10" stroke-linecap="round"/>
+        <!-- Joint -->
+        <circle cx="365" cy="112" r="14" fill="#232936" stroke="#d46a2e" stroke-width="2.5"/>
+        <!-- Lower boom arm -->
+        <line x1="365" y1="112" x2="314" y2="178" stroke="#12161f" stroke-width="16" stroke-linecap="round"/>
+        <line x1="365" y1="112" x2="314" y2="178" stroke="#31394a" stroke-width="8" stroke-linecap="round"/>
+        <!-- Mic yoke & shock mount -->
+        <circle cx="314" cy="178" r="10" fill="#1c212c" stroke="#9ca3af" stroke-width="2"/>
+        <g transform="translate(274, 198) rotate(32)">
+          <!-- Microphone capsule + body -->
+          <rect x="-26" y="-56" width="52" height="118" rx="26" fill="url(#micBodyGrad)" stroke="url(#micRimGrad)" stroke-width="2.5"/>
+          <!-- Grille mesh texture -->
+          <rect x="-22" y="-52" width="44" height="58" rx="22" fill="#141821"/>
+          <g stroke="#4b5563" stroke-width="1.4" opacity="0.75">
+            <line x1="-18" y1="-42" x2="18" y2="-42"/>
+            <line x1="-20" y1="-34" x2="20" y2="-34"/>
+            <line x1="-21" y1="-26" x2="21" y2="-26"/>
+            <line x1="-21" y1="-18" x2="21" y2="-18"/>
+            <line x1="-20" y1="-10" x2="20" y2="-10"/>
+            <line x1="-18" y1="-2" x2="18" y2="-2"/>
+          </g>
+          <!-- Warm copper ring around mic -->
+          <rect x="-26" y="4" width="52" height="7" rx="3" fill="#d46a2e"/>
+          <!-- Yoke bracket -->
+          <path d="M-36,10 L-36,48 C-36,68 36,68 36,48 L36,10" fill="none" stroke="#2c3342" stroke-width="8" stroke-linecap="round"/>
+          <!-- XLR cable tail -->
+          <path d="M0,62 C0,86 -16,96 -34,104" fill="none" stroke="#11141a" stroke-width="6" stroke-linecap="round"/>
+        </g>
+      </g>
+    </symbol>
+  </svg>
+
+  <!-- Üst Kontrol & Özelleştirme Çubuğu (Yazdırmada gizlenir) -->
+  <header class="toolbar-shell no-print" id="toolbarShell">
+    <div class="toolbar-inner">
+      <div class="toolbar-brand">
+        <span class="live-dot" aria-hidden="true"></span>
+        <div>
+          <strong class="toolbar-title">ERCİYES FM</strong>
+          <span class="toolbar-subtitle">Yayın Sponsorluk Stüdyosu</span>
+        </div>
+      </div>
+
+      <div class="view-switcher" role="tablist" aria-label="Görünüm Seçimi">
+        <button type="button" class="tab-btn is-active" id="tabVitrin" role="tab" aria-selected="true" data-switch-view="vitrin">
+          İnteraktif Vitrin
+        </button>
+        <button type="button" class="tab-btn" id="tabSunum" role="tab" aria-selected="false" data-switch-view="sunum">
+          3 Sayfalık Sunum (PDF)
+        </button>
+      </div>
+
+      <div class="toolbar-actions">
+        <button type="button" class="btn btn-ghost is-hidden" id="btnToggleEditorInCustomer" aria-expanded="false">
+          Sunumu Özelleştir
+        </button>
+        <button type="button" class="btn btn-outline" id="btnCopyShareLink">
+          Müşteri Linki Kopyala
+        </button>
+        <button type="button" class="btn btn-accent" id="btnPrintPdf">
+          PDF İndir / Yazdır
+        </button>
+      </div>
+    </div>
+    <p class="toolbar-feedback" id="toolbarFeedback" role="status" aria-live="polite"></p>
+  </header>
+
+  <!-- Müşteri Görünümü Bildirim Şeridi (musteri=1 modunda görünür, yazdırmada gizlenir) -->
+  <aside class="customer-banner no-print is-hidden" id="customerBanner" aria-label="Kişiselleştirilmiş Teklif Özeti">
+    <div class="customer-banner-inner">
+      <div class="customer-banner-text">
+        <span class="customer-badge">ÖZEL SPONSORLUK SUNUMU</span>
+        <p id="customerBannerSummary">Erciyes FM Yayın Sponsorluk Sunum Dosyası — Nur Kandır Akşam Kuşağı</p>
+      </div>
+      <div class="customer-banner-actions">
+        <a class="btn btn-whatsapp" id="customerBannerWa" href="https://wa.me/905397352280" target="_blank" rel="noopener noreferrer">
+          WhatsApp ile İletişime Geç
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <main id="appMain">
+    <!-- ==================== 1. İNTERAKTİF WEB VİTRİN GÖRÜNÜMÜ ==================== -->
+    <div class="showcase-shell" id="showcaseShell">
+      <!-- HERO SECTION -->
+      <section class="hero-section">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-eyebrow-row">
+              <span class="eyebrow-pill">ERCİYES FM · KAYSERİ VE İÇ ANADOLU</span>
+              <span class="eyebrow-year">2026 SPONSORLUK DOSYASI</span>
+            </div>
+
+            <div class="sponsor-greeting is-hidden" id="heroSponsorGreeting">
+              <span class="sponsor-greeting-label">HAZIRLANAN MARKA</span>
+              <strong class="sponsor-greeting-name" id="heroSponsorName">—</strong>
+            </div>
+
+            <h1 class="hero-title">
+              Kayseri ve İç Anadolu’nun Güçlü Sesi ile Markanızı Zirveye Taşıyın
+            </h1>
+            <p class="hero-lead">
+              Tematik Radyo Program Akışı &amp; İletişim Kuşağı Planlaması.
+              Günün yorgunluğunu atan, sohbet ve müzik ağırlıklı akıcı akşam kuşağında markanızı
+              günlük <strong>100.000+</strong> dinleyiciyle doğrudan buluşturun.
+            </p>
+
+            <div class="hero-people">
+              <div class="person-chip">
+                <span class="person-role">SUNUCU / YAYINCI</span>
+                <strong class="person-name">Nur Kandır</strong>
+              </div>
+              <div class="person-chip">
+                <span class="person-role">MENAJER</span>
+                <strong class="person-name">Emine Işık</strong>
+              </div>
+              <div class="person-chip">
+                <span class="person-role">İLETİŞİM</span>
+                <strong class="person-name">0539 735 22 80</strong>
+              </div>
+            </div>
+
+            <div class="hero-cta-row">
+              <a class="btn btn-accent btn-lg" href="#paketler">
+                Sponsorluk Paketlerini İncele
+              </a>
+              <button type="button" class="btn btn-light-outline btn-lg" id="btnHeroPreviewPdf">
+                3 Sayfalık Sunumu Aç &amp; PDF İndir
+              </button>
+              <a class="btn btn-whatsapp btn-lg" id="heroWaLink" href="https://wa.me/905397352280" target="_blank" rel="noopener noreferrer">
+                Emine Işık ile WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-media-card">
+            <div class="studio-frame" data-cover-frame>
+              <svg class="studio-svg-art" viewBox="0 0 560 660" role="img" aria-label="Erciyes FM On Air radyo stüdyosu mikrofon ve mikser görseli">
+                <use href="#erciyes-studio-scene"></use>
+              </svg>
+              <img class="studio-custom-img is-hidden" alt="Erciyes FM sponsorluk kapak stüdyo görseli" data-custom-cover-img>
+              <div class="studio-overlay-badge">
+                <span>ON AIR</span>
+                <small>Akşam Kuşağı · Nur Kandır</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CANLI TEKLİF & YAYIN AKIŞI ÖZELLEŞTİRİCİ -->
+      <section class="section-block customizer-section" id="ozellestiriciSection">
+        <div class="section-inner">
+          <div class="section-header-row">
+            <div>
+              <span class="section-kicker">CANLI TEKLİF STÜDYOSU</span>
+              <h2 class="section-title">Firmaya Özel Sunum, Yayın Saati &amp; PDF Üretici</h2>
+              <p class="section-desc">
+                Sunum dosyasındaki boş alanları aşağıdan doldurun; yayın akışı tablosu, canlı jingle anonsu,
+                paylaşılabilir müşteri linki ve 3 sayfalık A4 PDF çıktısı eşzamanlı güncellensin.
+              </p>
+            </div>
+            <button type="button" class="btn btn-outline-dark" id="btnResetCustomizations">
+              Alanları Sıfırla
+            </button>
+          </div>
+
+          <div class="customizer-card">
+            <div class="customizer-grid">
+              <div class="field-group">
+                <label class="field-label" for="inputSponsorName">Sponsor Markası</label>
+                <input
+                  type="text"
+                  id="inputSponsorName"
+                  class="field-input"
+                  maxlength="100"
+                  placeholder="Örn: Erciyes Mobilya"
+                  autocomplete="off"
+                >
+                <span class="field-hint">Sayfa 1 kapağına ve Sayfa 3 açılış jingle’ına işlenir. Boşsa şablon çizgisi kalır.</span>
+              </div>
+
+              <div class="field-group">
+                <label class="field-label" for="inputBroadcastHours">Yayın Saatleri</label>
+                <div class="input-with-action">
+                  <input
+                    type="text"
+                    id="inputBroadcastHours"
+                    class="field-input"
+                    maxlength="40"
+                    placeholder="Örn: 18:00 - 20:00"
+                    autocomplete="off"
+                  >
+                  <button type="button" class="btn btn-navy" id="btnDistributeHours">
+                    Saatleri Dağıt
+                  </button>
+                </div>
+                <span class="field-hint">Geçerli bir saat aralığı (örn. 18:00 - 20:00) girildiğinde 6 kuşağı otomatik böler.</span>
+              </div>
+
+              <div class="field-group">
+                <label class="field-label" for="selectPackage">Tercih Edilen Paket</label>
+                <select id="selectPackage" class="field-input">
+                  <option value="">Paket Seçilmedi (Genel Sunum)</option>
+                  <option value="bronz">Bronz Sponsorluk — 15.000 TL</option>
+                  <option value="gumus">Gümüş Sponsorluk — 25.000 TL</option>
+                  <option value="altin">Altın Sponsorluk — 30.000 TL</option>
+                  <option value="ozel">Özel Kampanya &amp; Etkinlik Sponsorluğu</option>
+                </select>
+                <span class="field-hint">WhatsApp teklif mesajına ve müşteri linkine eklenir.</span>
+              </div>
+
+              <div class="field-group">
+                <label class="field-label" for="inputCoverPhoto">Kapak Stüdyo Görseli (Opsiyonel)</label>
+                <div class="upload-controls">
+                  <label class="btn btn-outline-dark upload-label" for="inputCoverPhoto">
+                    Görsel Yükle
+                  </label>
+                  <input type="file" id="inputCoverPhoto" accept="image/*" class="visually-hidden">
+                  <button type="button" class="btn btn-subtle is-hidden" id="btnResetCoverPhoto">
+                    Varsayılana Dön
+                  </button>
+                </div>
+                <span class="field-hint" id="coverPhotoStatus">Varsayılan "ON AIR" stüdyo görseli aktif.</span>
+              </div>
+            </div>
+
+            <div class="share-strip">
+              <div class="share-url-wrap">
+                <span class="share-url-label">Müşteriye Özel Paylaşım Linki (?musteri=1):</span>
+                <code class="share-url-code" id="shareUrlPreview">?musteri=1</code>
+              </div>
+              <div class="share-strip-actions">
+                <button type="button" class="btn btn-outline-dark" id="btnToggleCustomerPreview">
+                  Müşteri Görünümünü Dene
+                </button>
+                <button type="button" class="btn btn-navy" id="btnCopyShareLinkInline">
+                  Linki Kopyala
+                </button>
+                <button type="button" class="btn btn-accent" id="btnPrintFromCustomizer">
+                  Firmaya Özel PDF İndir
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RADYOMUZ HAKKINDA & İSTATİSTİKLER -->
+      <section class="section-block about-section" id="radyomuz">
+        <div class="section-inner">
+          <div class="about-layout">
+            <div class="about-copy">
+              <span class="section-kicker">RADYOMUZ HAKKINDA</span>
+              <h2 class="section-title">Bölgenin En Popüler ve Köklü Radyo İstasyonlarından Biri</h2>
+              <p class="about-paragraph">
+                Erciyes FM; Kayseri merkezli yayın ağı, zengin içerikli programları ve yüksek dinleyici kitlesiyle
+                bölgenin en popüler ve köklü radyo istasyonlarından biridir. Samimi yayın anlayışı, güncel müzik
+                listeleri, kültür-sanat, spor ve gündem programlarıyla geniş bir demografik kitleye hitap etmektedir.
+              </p>
+            </div>
+
+            <div class="metrics-trio" aria-label="Erişim ve Dinleyici İstatistikleri">
+              <article class="metric-card">
+                <strong class="metric-value">%85+</strong>
+                <span class="metric-label">BÖLGESEL ERİŞİM</span>
+              </article>
+              <article class="metric-card">
+                <strong class="metric-value">100.000+</strong>
+                <span class="metric-label">GÜNLÜK DİNLEYİCİ</span>
+              </article>
+              <article class="metric-card">
+                <strong class="metric-value">20-55</strong>
+                <span class="metric-label">HEDEF YAŞ ARALIĞI</span>
+              </article>
+            </div>
+          </div>
+
+          <div class="why-block">
+            <h3 class="subsection-title">NEDEN ERCİYES FM’E SPONSOR OLMALISINIZ?</h3>
+            <div class="why-grid">
+              <article class="why-card">
+                <span class="why-index">01</span>
+                <h4>Yüksek Marka Bilinirliği</h4>
+                <p>Kayseri ve çevre illerde yerel pazarın en güçlü ve güvenilir seslerinden biriyle ortaklık kurun.</p>
+              </article>
+              <article class="why-card">
+                <span class="why-index">02</span>
+                <h4>Doğrudan Hedef Kitle</h4>
+                <p>Ticaret, sanayi, eğitim ve günlük yaşamın merkezindeki aktif tüketicilere doğrudan ulaşın.</p>
+              </article>
+              <article class="why-card">
+                <span class="why-index">03</span>
+                <h4>Çok Kanallı Yayın</h4>
+                <p>Karasal frekans ve dijital mecralar üzerinden geniş kitleye kesintisiz erişim.</p>
+              </article>
+              <article class="why-card">
+                <span class="why-index">04</span>
+                <h4>Esnek &amp; Özel Paketler</h4>
+                <p>Markanızın pazarlama hedeflerine uygun sponsorluk kurguları.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SPONSORLUK PAKET SEÇENEKLERİ -->
+      <section class="section-block packages-section" id="paketler">
+        <div class="section-inner">
+          <div class="section-header-row">
+            <div>
+              <span class="section-kicker">SPONSORLUK PAKET SEÇENEKLERİ</span>
+              <h2 class="section-title">Markanız İçin Esnek İş Birliği Paketleri</h2>
+              <p class="section-desc">
+                İhtiyacınıza uygun paketi seçin; teklif özetini ve WhatsApp iletişim mesajını hemen hazırlayın.
+              </p>
+            </div>
+          </div>
+
+          <div class="packages-grid" role="group" aria-label="Sponsorluk Paketleri">
+            <article class="package-card" data-package-card="bronz">
+              <div class="package-top">
+                <span class="package-badge badge-bronze">BRONZ PAKET</span>
+                <h3 class="package-name">Bronz Sponsorluk</h3>
+                <div class="package-price">15.000 TL</div>
+              </div>
+              <ul class="package-features">
+                <li>Program başı, ortası ve sonu reklam geçişleri</li>
+                <li>Reklam aralarına giriş çıkarken firmadan özel bahsedilme</li>
+              </ul>
+              <div class="package-actions">
+                <button type="button" class="btn btn-outline-dark btn-full" data-select-package="bronz">
+                  Paketi Seç
+                </button>
+                <a class="btn btn-whatsapp btn-full" data-wa-package="bronz" href="https://wa.me/905397352280" target="_blank" rel="noopener noreferrer">
+                  Bu Paket İçin İletişime Geç
+                </a>
+              </div>
+            </article>
+
+            <article class="package-card" data-package-card="gumus">
+              <div class="package-top">
+                <span class="package-badge badge-silver">GÜMÜŞ PAKET</span>
+                <h3 class="package-name">Gümüş Sponsorluk</h3>
+                <div class="package-price">25.000 TL</div>
+              </div>
+              <ul class="package-features">
+                <li>Standart Reklam Kuşakları</li>
+                <li>Yayında Özel Konuk Alımı</li>
+              </ul>
+              <div class="package-actions">
+                <button type="button" class="btn btn-outline-dark btn-full" data-select-package="gumus">
+                  Paketi Seç
+                </button>
+                <a class="btn btn-whatsapp btn-full" data-wa-package="gumus" href="https://wa.me/905397352280" target="_blank" rel="noopener noreferrer">
+                  Bu Paket İçin İletişime Geç
+                </a>
+              </div>
+            </article>
+
+            <article class="package-card package-card-featured" data-package-card="altin">
+              <div class="package-top">
+                <span class="package-badge badge-gold">ALTIN PAKET</span>
+                <h3 class="package-name">Altın Sponsorluk</h3>
+                <div class="package-price">30.000 TL</div>
+              </div>
+              <ul class="package-features">
+                <li>Her saat başı ve 30 dakikada bir düzenli reklam yayını</li>
+                <li>Her hafta sonu özel konuk alımı</li>
+                <li>Esnek program saati ayrıcalığı</li>
+              </ul>
+              <div class="package-actions">
+                <button type="button" class="btn btn-navy btn-full" data-select-package="altin">
+                  Paketi Seç
+                </button>
+                <a class="btn btn-whatsapp btn-full" data-wa-package="altin" href="https://wa.me/905397352280" target="_blank" rel="noopener noreferrer">
+                  Bu Paket İçin İletişime Geç
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Özel Kampanya & Etkinlik Sponsorluğu -->
+          <article class="special-campaign-card" data-package-card="ozel">
+            <div class="special-campaign-copy">
+              <span class="package-badge badge-special">ÖZEL KAMPANYA &amp; ETKİNLİK SPONSORLUĞU</span>
+              <h3>Canlı Yayın Aracı ile Yerinden Yayın &amp; Özel Konuk Alımları</h3>
+              <p>
+                Açılış, festival veya dönemsel kampanyalarınız için canlı yayın aracı ile yerinden yayın ve özel
+                konuk alımları düzenlenebilmektedir.
+              </p>
+            </div>
+            <div class="special-campaign-actions">
+              <button type="button" class="btn btn-outline-dark" data-select-package="ozel">
+                Özel Kampanyayı Seç
+              </button>
+              <a class="btn btn-whatsapp" data-wa-package="ozel" href="https://wa.me/905397352280" target="_blank" rel="noopener noreferrer">
+                Etkinlik Teklifi Al
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- HAFTA İÇİ YAYIN AKIŞI & CANLI ANONS SİMÜLATÖRÜ -->
+      <section class="section-block schedule-section" id="yayin-akisi">
+        <div class="section-inner">
+          <div class="section-header-row">
+            <div>
+              <span class="section-kicker">1. HAFTA İÇİ YAYIN AKIŞI</span>
+              <h2 class="section-title">Tematik Program Akışı &amp; Canlı Anons Önizleme</h2>
+              <p class="section-desc">
+                <strong>Konsept:</strong> Günün yorgunluğunu atan, sohbet ve müzik ağırlıklı akıcı akşam kuşağı.
+                <span class="hours-pill" id="vitrinHoursPill">Yayın Saatleri: ............... - ...............</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="schedule-split">
+            <div class="schedule-table-card">
+              <table class="schedule-table">
+                <thead>
+                  <tr>
+                    <th>SAAT</th>
+                    <th>BÖLÜM / İÇERİK</th>
+                    <th>DETAY VE AÇIKLAMA</th>
+                  </tr>
+                </thead>
+                <tbody id="vitrinScheduleBody">
+                  <tr data-slot-index="0">
+                    <td class="slot-time-cell">
+                      <input type="text" class="slot-time-input" data-slot-input="0" aria-label="Açılış ve Jingle Saati" value="......... - .........">
+                    </td>
+                    <td class="slot-title-cell">Açılış &amp; Jingle</td>
+                    <td data-jingle-cell>Program açılışı, günün selamlanması ve “................. ile Akşam Kuşağı Başlıyor” sponsorlu jingle.</td>
+                  </tr>
+                  <tr data-slot-index="1">
+                    <td class="slot-time-cell">
+                      <input type="text" class="slot-time-input" data-slot-input="1" aria-label="Günün Teması ve Müzik Saati" value="......... - .........">
+                    </td>
+                    <td class="slot-title-cell">Günün Teması &amp; Müzik</td>
+                    <td>Günün anlamına uygun açılış konuşması ve seçkin müzik dinletisi.</td>
+                  </tr>
+                  <tr data-slot-index="2">
+                    <td class="slot-time-cell">
+                      <input type="text" class="slot-time-input" data-slot-input="2" aria-label="Sponsor Kuşağı Saati" value="......... - .........">
+                    </td>
+                    <td class="slot-title-cell">Sponsor Kuşağı</td>
+                    <td>Sponsor markanın haftalık fırsatları, duyuruları veya kurumsal tanıtım spotu.</td>
+                  </tr>
+                  <tr data-slot-index="3">
+                    <td class="slot-time-cell">
+                      <input type="text" class="slot-time-input" data-slot-input="3" aria-label="Dinleyici Köşesi Saati" value="......... - .........">
+                    </td>
+                    <td class="slot-title-cell">Dinleyici Köşesi</td>
+                    <td>Dinleyicilerden gelen mesajlar, sohbet ve istek parçaların paylaşılması.</td>
+                  </tr>
+                  <tr data-slot-index="4">
+                    <td class="slot-time-cell">
+                      <input type="text" class="slot-time-input" data-slot-input="4" aria-label="Günün Notu ve Şiir Saati" value="......... - .........">
+                    </td>
+                    <td class="slot-title-cell">Günün Notu &amp; Şiir</td>
+                    <td>Hayata ve güzelliklere dair kısa bir okuma / ilham veren şiir dinletisi.</td>
+                  </tr>
+                  <tr data-slot-index="5">
+                    <td class="slot-time-cell">
+                      <input type="text" class="slot-time-input" data-slot-input="5" aria-label="Kapanış ve Teşekkür Saati" value="......... - .........">
+                    </td>
+                    <td class="slot-title-cell">Kapanış &amp; Teşekkür</td>
+                    <td>Yarının yayın duyurusu, sponsorluk teşekkürü ve jingle ile kapanış.</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="weekday-details-box">
+                <h4>Hafta İçi Sponsorluk Detayları</h4>
+                <ul>
+                  <li>Yayın boyunca saat başı ve kapanışta canlı olarak sponsor marka ismi zikredilecektir.</li>
+                  <li>Program içerisine entegre edilmiş reklam ve özel kampanya duyuruları öncelikli olarak anons edilecektir.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Canlı Anons Simülatörü -->
+            <aside class="cue-simulator-card" aria-label="Canlı Jingle ve Anons Önizleyici">
+              <div class="cue-simulator-header">
+                <span class="cue-badge">CANLI ANONS SİMÜLATÖRÜ</span>
+                <h3>Markanız Yayında Nasıl Duyulur?</h3>
+                <p>Sunum dosyasındaki jingle ve sponsorluk taahhütlerinin canlı yayın kurgusu önizlemesi:</p>
+              </div>
+
+              <div class="cue-list">
+                <div class="cue-item">
+                  <span class="cue-tag">1. AÇILIŞ &amp; JINGLE</span>
+                  <p class="cue-quote" id="cueOpeningText">“................. ile Akşam Kuşağı Başlıyor”</p>
+                </div>
+                <div class="cue-item">
+                  <span class="cue-tag">2. SAAT BAŞI &amp; SPONSOR KUŞAĞI</span>
+                  <p class="cue-quote" id="cueMidText">Yayın boyunca saat başı canlı anons ve Sponsor Kuşağı kapsamında haftalık fırsatlarınız, duyurularınız ve kurumsal tanıtım spotunuz öncelikli olarak paylaşılır.</p>
+                </div>
+                <div class="cue-item">
+                  <span class="cue-tag">3. KAPANIŞ &amp; TEŞEKKÜR</span>
+                  <p class="cue-quote" id="cueClosingText">Yarının yayın duyurusu, canlı sponsorluk teşekkürü ve kapanış jingle’ı ile program tamamlanır.</p>
+                </div>
+              </div>
+
+              <div class="cue-meta-footer">
+                <div>
+                  <span>Sunucu / Yayıncı</span>
+                  <strong>Nur Kandır</strong>
+                </div>
+                <div>
+                  <span>Seçili Paket</span>
+                  <strong id="cuePackageLabel">Genel Sponsorluk Sunumu</strong>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- İLETİŞİM & İŞ BİRLİĞİ FOOTER -->
+      <footer class="contact-footer-section" id="iletisim">
+        <div class="section-inner">
+          <div class="contact-card">
+            <div class="contact-info">
+              <span class="contact-kicker">İLETİŞİM &amp; İŞ BİRLİĞİ</span>
+              <h2>Erciyes FM Sponsorluk İletişim Masası</h2>
+              <div class="contact-grid">
+                <div>
+                  <span class="contact-label">Radyo Adı</span>
+                  <strong>Erciyes FM</strong>
+                </div>
+                <div>
+                  <span class="contact-label">Yayın Bölgesi</span>
+                  <strong>Kayseri ve İç Anadolu</strong>
+                </div>
+                <div>
+                  <span class="contact-label">Sunucu / Yayıncı</span>
+                  <strong>Nur Kandır</strong>
+                </div>
+                <div>
+                  <span class="contact-label">Menajer</span>
+                  <strong>Emine Işık</strong>
+                </div>
+                <div>
+                  <span class="contact-label">Telefon</span>
+                  <a href="tel:+905397352280" class="contact-link">0539 735 22 80</a>
+                </div>
+                <div>
+                  <span class="contact-label">Web Sitesi</span>
+                  <a href="https://www.erciyesfm.com.tr" target="_blank" rel="noopener noreferrer" class="contact-link">www.erciyesfm.com.tr</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-cta-box">
+              <p class="contact-cta-note" id="footerWaSummary">
+                Seçili sponsorluk bilgileriyle doğrudan Menajer Emine Işık ile WhatsApp üzerinden iletişime geçin.
+              </p>
+              <a class="btn btn-whatsapp btn-lg btn-full" id="footerWaLink" href="https://wa.me/905397352280" target="_blank" rel="noopener noreferrer">
+                WhatsApp Teklifi Gönder (0539 735 22 80)
+              </a>
+              <button type="button" class="btn btn-light-outline btn-lg btn-full" id="btnFooterPrintPdf">
+                3 Sayfalık PDF Sunumunu İndir
+              </button>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- ==================== 2. BİREBİR 3 SAYFALIK SUNUM / PDF GÖRÜNÜMÜ ==================== -->
+    <div class="document-shell" id="documentShell" aria-label="3 Sayfalık Resmi Yayın Sponsorluk Sunum Dosyası">
+      <!-- SAYFA 1 / 3 -->
+      <section class="pdf-page pdf-page-1" aria-label="Sayfa 1">
+        <div class="pdf-cover-card">
+          <div class="pdf-cover-top">
+            <span class="pdf-cover-pill">ERCİYES FM</span>
+            <div class="pdf-cover-photo" data-cover-frame>
+              <svg class="studio-svg-art" viewBox="0 0 560 660" role="img" aria-label="Erciyes FM Stüdyo On Air Kapağı">
+                <use href="#erciyes-studio-scene"></use>
+              </svg>
+              <img class="studio-custom-img is-hidden" alt="Özel yüklenen Erciyes FM kapak görseli" data-custom-cover-img>
+            </div>
+          </div>
+
+          <div class="pdf-cover-center">
+            <h1 class="pdf-cover-title">YAYIN SPONSORLUK SUNUM<br>DOSYASI</h1>
+            <div class="pdf-cover-accent-rule" aria-hidden="true"></div>
+            <p class="pdf-cover-subtitle">Tematik Radyo Program Akışı &amp; İletişim Kuşağı Planlaması</p>
+          </div>
+
+          <div class="pdf-cover-bottom">
+            <div class="pdf-cover-divider" aria-hidden="true"></div>
+            <div class="pdf-cover-meta-grid">
+              <div class="pdf-meta-item">
+                <span class="pdf-meta-label">SUNUCU / YAYINCI</span>
+                <strong class="pdf-meta-value">Nur Kandır</strong>
+              </div>
+              <div class="pdf-meta-item pdf-meta-right">
+                <span class="pdf-meta-label">MENAJER</span>
+                <strong class="pdf-meta-value">Emine Işık</strong>
+              </div>
+              <div class="pdf-meta-item">
+                <span class="pdf-meta-label">SPONSOR MARKASI</span>
+                <strong class="pdf-meta-value pdf-sponsor-line is-placeholder" id="pdfSponsorBrand"></strong>
+              </div>
+              <div class="pdf-meta-item pdf-meta-right">
+                <span class="pdf-meta-label">TARİH</span>
+                <strong class="pdf-meta-value pdf-meta-year">2026</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="pdf-page-footer">
+          <span>Erciyes FM — Yayın Sponsorluk Sunum Dosyası</span>
+          <span>Page 1 of 3</span>
+        </footer>
+      </section>
+
+      <!-- SAYFA 2 / 3 -->
+      <section class="pdf-page pdf-page-2" aria-label="Sayfa 2">
+        <div class="pdf-page-content">
+          <header class="pdf-navy-banner">
+            <div class="pdf-banner-brand">ERCİYES FM</div>
+            <div class="pdf-banner-sub">Sponsorluk ve Reklam İş Birliği Sunumu</div>
+            <div class="pdf-banner-tagline">Kayseri ve İç Anadolu'nun Güçlü Sesi ile Markanızı Zirveye Taşıyın</div>
+          </header>
+
+          <div class="pdf-section">
+            <h2 class="pdf-heading">RADYOMUZ HAKKINDA</h2>
+            <p class="pdf-body-text">
+              Erciyes FM; Kayseri merkezli yayın ağı, zengin içerikli programları ve yüksek dinleyici kitlesiyle
+              bölgenin en popüler ve köklü radyo istasyonlarından biridir. Samimi yayın anlayışı, güncel müzik
+              listeleri, kültür-sanat, spor ve gündem programlarıyla geniş bir demografik kitleye hitap etmektedir.
+            </p>
+            <div class="pdf-metrics-bar">
+              <div class="pdf-metric-box">
+                <strong>%85+</strong>
+                <span>BÖLGESEL ERİŞİM</span>
+              </div>
+              <div class="pdf-metric-box">
+                <strong>100.000+</strong>
+                <span>GÜNLÜK DİNLEYİCİ</span>
+              </div>
+              <div class="pdf-metric-box">
+                <strong>20-55</strong>
+                <span>HEDEF YAŞ ARALIĞI</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pdf-section">
+            <h2 class="pdf-heading">NEDEN ERCİYES FM'E SPONSOR OLMALISINIZ?</h2>
+            <ul class="pdf-bullet-list">
+              <li><strong>Yüksek Marka Bilinirliği:</strong> Kayseri ve çevre illerde yerel pazarın en güçlü ve güvenilir seslerinden biriyle ortaklık kurun.</li>
+              <li><strong>Doğrudan Hedef Kitle:</strong> Ticaret, sanayi, eğitim ve günlük yaşamın merkezindeki aktif tüketicilere doğrudan ulaşın.</li>
+              <li><strong>Çok Kanallı Yayın:</strong> Karasal frekans ve dijital mecralar üzerinden geniş kitleye kesintisiz erişim.</li>
+              <li><strong>Esnek &amp; Özel Paketler:</strong> Markanızın pazarlama hedeflerine uygun sponsorluk kurguları.</li>
+            </ul>
+          </div>
+
+          <div class="pdf-section">
+            <h2 class="pdf-heading">SPONSORLUK PAKET SEÇENEKLERİ</h2>
+            <table class="pdf-packages-table">
+              <thead>
+                <tr>
+                  <th>Paket Türü</th>
+                  <th>İçerik &amp; Detaylar</th>
+                  <th class="col-price">Birim Fiyat</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr data-pdf-package="bronz">
+                  <td>
+                    <strong class="pdf-pkg-title">Bronz Sponsorluk</strong>
+                    <span class="pdf-pkg-sub pdf-pkg-bronze">BRONZ PAKET</span>
+                  </td>
+                  <td>
+                    <ul class="pdf-cell-list">
+                      <li>Program başı, ortası ve sonu reklam geçişleri</li>
+                      <li>Reklam aralarına giriş çıkarken firmadan özel bahsedilme</li>
+                    </ul>
+                  </td>
+                  <td class="col-price">15.000 TL</td>
+                </tr>
+                <tr data-pdf-package="gumus">
+                  <td>
+                    <strong class="pdf-pkg-title">Gümüş Sponsorluk</strong>
+                    <span class="pdf-pkg-sub pdf-pkg-silver">GÜMÜŞ PAKET</span>
+                  </td>
+                  <td>
+                    <ul class="pdf-cell-list">
+                      <li>Standart Reklam Kuşakları</li>
+                      <li>Yayında Özel Konuk Alımı</li>
+                    </ul>
+                  </td>
+                  <td class="col-price">25.000 TL</td>
+                </tr>
+                <tr data-pdf-package="altin">
+                  <td>
+                    <strong class="pdf-pkg-title">Altın Sponsorluk</strong>
+                    <span class="pdf-pkg-sub pdf-pkg-gold">ALTIN PAKET</span>
+                  </td>
+                  <td>
+                    <ul class="pdf-cell-list">
+                      <li>Her saat başı ve 30 dakikada bir düzenli reklam yayını</li>
+                      <li>Her hafta sonu özel konuk alımı</li>
+                      <li>Esnek program saati ayrıcalığı</li>
+                    </ul>
+                  </td>
+                  <td class="col-price">30.000 TL</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="pdf-callout-blue" data-pdf-package="ozel">
+              <strong>Özel Kampanya &amp; Etkinlik Sponsorluğu</strong>
+              <p>
+                Açılış, festival veya dönemsel kampanyalarınız için canlı yayın aracı ile yerinden yayın ve özel konuk
+                alımları düzenlenebilmektedir.
+              </p>
+            </div>
+          </div>
+
+          <div class="pdf-contact-box">
+            <div class="pdf-contact-title">İLETİŞİM &amp; İŞ BİRLİĞİ</div>
+            <div class="pdf-contact-grid">
+              <div><strong>Radyo Adı:</strong> Erciyes FM</div>
+              <div><strong>Telefon:</strong> 0539 735 22 80</div>
+              <div><strong>Yayın Bölgesi:</strong> Kayseri ve İç Anadolu</div>
+              <div><strong>Web Sitesi:</strong> www.erciyesfm.com.tr</div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="pdf-page-footer">
+          <span>Erciyes FM — Yayın Sponsorluk Sunum Dosyası</span>
+          <span>Page 2 of 3</span>
+        </footer>
+      </section>
+
+      <!-- SAYFA 3 / 3 -->
+      <section class="pdf-page pdf-page-3" aria-label="Sayfa 3">
+        <div class="pdf-page-content">
+          <header class="pdf-p3-header">
+            <h2 class="pdf-p3-title">1. HAFTA İÇİ YAYIN AKIŞI</h2>
+            <span class="pdf-p3-kicker">ERCİYES FM | SPONSORLUK SUNUMU</span>
+          </header>
+
+          <div class="pdf-callout-copper">
+            <div class="pdf-callout-title">Yayın Konsepti &amp; Genel Bilgiler</div>
+            <p><strong>Yayın Saatleri:</strong> <span id="pdfBroadcastHours">............... - ...............</span></p>
+            <p><strong>Konsept:</strong> Günün yorgunluğunu atan, sohbet ve müzik ağırlıklı akıcı akşam kuşağı.</p>
+          </div>
+
+          <table class="pdf-schedule-table">
+            <thead>
+              <tr>
+                <th class="col-time">SAAT</th>
+                <th class="col-section">BÖLÜM / İÇERİK</th>
+                <th>DETAY VE AÇIKLAMA</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="col-time" data-pdf-slot="0">......... - .........</td>
+                <td class="col-section">Açılış &amp; Jingle</td>
+                <td id="pdfOpeningJingle">Program açılışı, günün selamlanması ve “................. ile Akşam Kuşağı Başlıyor” sponsorlu jingle.</td>
+              </tr>
+              <tr>
+                <td class="col-time" data-pdf-slot="1">......... - .........</td>
+                <td class="col-section">Günün Teması &amp; Müzik</td>
+                <td>Günün anlamına uygun açılış konuşması ve seçkin müzik dinletisi.</td>
+              </tr>
+              <tr>
+                <td class="col-time" data-pdf-slot="2">......... - .........</td>
+                <td class="col-section">Sponsor Kuşağı</td>
+                <td>Sponsor markanın haftalık fırsatları, duyuruları veya kurumsal tanıtım spotu.</td>
+              </tr>
+              <tr>
+                <td class="col-time" data-pdf-slot="3">......... - .........</td>
+                <td class="col-section">Dinleyici Köşesi</td>
+                <td>Dinleyicilerden gelen mesajlar, sohbet ve istek parçaların paylaşılması.</td>
+              </tr>
+              <tr>
+                <td class="col-time" data-pdf-slot="4">......... - .........</td>
+                <td class="col-section">Günün Notu &amp; Şiir</td>
+                <td>Hayata ve güzelliklere dair kısa bir okuma / ilham veren şiir dinletisi.</td>
+              </tr>
+              <tr>
+                <td class="col-time" data-pdf-slot="5">......... - .........</td>
+                <td class="col-section">Kapanış &amp; Teşekkür</td>
+                <td>Yarının yayın duyurusu, sponsorluk teşekkürü ve jingle ile kapanış.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="pdf-callout-blue-soft">
+            <div class="pdf-callout-title">Hafta İçi Sponsorluk Detayları</div>
+            <ul>
+              <li>Yayın boyunca saat başı ve kapanışta canlı olarak sponsor marka ismi zikredilecektir.</li>
+              <li>Program içerisine entegre edilmiş reklam ve özel kampanya duyuruları öncelikli olarak anons edilecektir.</li>
+            </ul>
+          </div>
+        </div>
+
+        <footer class="pdf-page-footer">
+          <span>Erciyes FM — Yayın Sponsorluk Sunum Dosyası</span>
+          <span>Page 3 of 3</span>
+        </footer>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
