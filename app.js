@@ -156,7 +156,7 @@
     const hours = cleanText(state && state.broadcastHours, 40);
 
     const parts = [
-      "Merhaba Emine Hanım, Erciyes FM (Sunucu: Nur Kendir) yayın sponsorluğu hakkında bilgi ve teklif görüşmesi talep ediyorum.",
+      "Merhaba Bahar Hanım, Erciyes FM (Sunucu: Nur KENDİR) yayın sponsorluğu hakkında bilgi ve teklif görüşmesi talep ediyorum.",
     ];
     if (sponsor) parts.push(`Firma / Marka: ${sponsor}`);
     if (pkg) {
@@ -408,8 +408,8 @@
     if (footerWaSummary) {
       const selectedSummary = [sponsor, pkg ? pkg.name : "", hours].filter(Boolean).join(" · ");
       footerWaSummary.textContent = selectedSummary
-        ? `Hazır teklif bağlamı (${selectedSummary}) ile doğrudan Menajer Emine Işık ile WhatsApp üzerinden iletişime geçin.`
-        : "Seçili sponsorluk bilgileriyle doğrudan Menajer Emine Işık ile WhatsApp üzerinden iletişime geçin.";
+        ? `Hazır teklif bağlamı (${selectedSummary}) ile doğrudan Menajer Bahar ARAZ ile WhatsApp üzerinden iletişime geçin.`
+        : "Seçili sponsorluk bilgileriyle doğrudan Menajer Bahar ARAZ ile WhatsApp üzerinden iletişime geçin.";
     }
 
     // Kapak Stüdyo Görseli (Varsayılan SVG veya Yüklenen Görsel)

@@ -5,8 +5,8 @@ Erciyes FM (**Kayseri ve İç Anadolu**) akşam kuşağı yayını için hazırl
 ## Künye ve İletişim
 - **Radyo:** Erciyes FM (`www.erciyesfm.com.tr`)
 - **Yayın Bölgesi:** Kayseri ve İç Anadolu (`%85+ Bölgesel Erişim`, `100.000+ Günlük Dinleyici`, `20-55 Hedef Yaş Aralığı`)
-- **Sunucu / Yayıncı:** Nur Kendir
-- **Menajer:** Emine Işık (`0539 735 22 80`)
+- **Sunucu / Yayıncı:** Nur KENDİR
+- **Menajer:** Bahar ARAZ (`0539 735 22 80`)
 
 ## Özellikler
 - **İnteraktif Vitrin & 3 Sayfalık Resmi Sunum Modu:** Üst sekmeden anında tam ekran web vitrin ile birebir 3 sayfalık sunum önizlemesi arasında geçiş yapılır.

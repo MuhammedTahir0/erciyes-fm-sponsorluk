@@ -5,7 +5,7 @@ Claude Code: yerel CLI yalnız gerçek çalışma dizini ve proje komut kaynağ�
 
 ## Proje kaynağı
 
-- Açıklama: Erciyes FM Yayın Sponsorluk Sunum Dosyası, Tematik Radyo Program Akışı ve İnteraktif Sponsorluk Teklif/PDF Platformu (Sunucu: Nur Kendir, Menajer: Emine Işık)
+- Açıklama: Erciyes FM Yayın Sponsorluk Sunum Dosyası, Tematik Radyo Program Akışı ve İnteraktif Sponsorluk Teklif/PDF Platformu (Sunucu: Nur KENDİR, Menajer: Bahar ARAZ)
 - Teknoloji: HTML5, CSS3, Vanilla JavaScript, Print/PDF Engine
 - Başlatan: antigravity; sonraki işte gerçek çalışan ajan kendi attribution’ını verir.
 - Komutları mevcut manifest/README/constants ve gerçek workspace üzerinden doğrula; varsayılan npm veya başka stack komutu yok.

@@ -18,8 +18,8 @@ test("index.html contains all canonical 3-page PDF strings and figures", () => {
     "ERCİYES FM",
     "YAYIN SPONSORLUK SUNUM",
     "Tematik Radyo Program Akışı &amp; İletişim Kuşağı Planlaması",
-    "Nur Kendir",
-    "Emine Işık",
+    "Nur KENDİR",
+    "Bahar ARAZ",
     "SPONSOR MARKASI",
     "2026",
     "Page 1 of 3",
@@ -131,7 +131,7 @@ test("URL search state parsing and share link generation round-trip accurately",
   assert.equal(roundTripped.customerMode, true);
 });
 
-test("buildWhatsAppUrl encodes Emine Işık number, sponsor brand, package and hours", () => {
+test("buildWhatsAppUrl encodes Bahar ARAZ number, sponsor brand, package and hours", () => {
   const state = {
     sponsorName: "Erciyes Kurumsal",
     broadcastHours: "18:00 - 20:00",
@@ -143,7 +143,7 @@ test("buildWhatsAppUrl encodes Emine Işık number, sponsor brand, package and h
   assert.match(decoded, /Erciyes Kurumsal/);
   assert.match(decoded, /Gümüş Sponsorluk \(25\.000 TL\)/);
   assert.match(decoded, /18:00 - 20:00/);
-  assert.match(decoded, /Nur Kendir/);
+  assert.match(decoded, /Nur KENDİR/);
 });
 
 test("renderState updates mock DOM safely without XSS interpretation", () => {
