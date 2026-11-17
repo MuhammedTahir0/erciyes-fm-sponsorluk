@@ -18,7 +18,7 @@ test("index.html contains all canonical 3-page PDF strings and figures", () => {
     "ERCİYES FM",
     "YAYIN SPONSORLUK SUNUM",
     "Tematik Radyo Program Akışı &amp; İletişim Kuşağı Planlaması",
-    "Nur Kandır",
+    "Nur Kendir",
     "Emine Işık",
     "SPONSOR MARKASI",
     "2026",
@@ -143,7 +143,7 @@ test("buildWhatsAppUrl encodes Emine Işık number, sponsor brand, package and h
   assert.match(decoded, /Erciyes Kurumsal/);
   assert.match(decoded, /Gümüş Sponsorluk \(25\.000 TL\)/);
   assert.match(decoded, /18:00 - 20:00/);
-  assert.match(decoded, /Nur Kandır/);
+  assert.match(decoded, /Nur Kendir/);
 });
 
 test("renderState updates mock DOM safely without XSS interpretation", () => {

@@ -5,7 +5,7 @@ Gemini/Antigravity: web istemcisinde yerel FS/CLI erişimi varsayılmaz; erişil
 
 ## Proje kaynağı
 
-- Açıklama: Erciyes FM Yayın Sponsorluk Sunum Dosyası, Tematik Radyo Program Akışı ve İnteraktif Sponsorluk Teklif/PDF Platformu (Sunucu: Nur Kandır, Menajer: Emine Işık)
+- Açıklama: Erciyes FM Yayın Sponsorluk Sunum Dosyası, Tematik Radyo Program Akışı ve İnteraktif Sponsorluk Teklif/PDF Platformu (Sunucu: Nur Kendir, Menajer: Emine Işık)
 - Teknoloji: HTML5, CSS3, Vanilla JavaScript, Print/PDF Engine
 - Başlatan: antigravity; sonraki işte gerçek çalışan ajan kendi attribution’ını verir.
 - Komutları mevcut manifest/README/constants ve gerçek workspace üzerinden doğrula; varsayılan npm veya başka stack komutu yok.

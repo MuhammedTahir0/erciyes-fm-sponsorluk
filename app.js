@@ -156,7 +156,7 @@
     const hours = cleanText(state && state.broadcastHours, 40);
 
     const parts = [
-      "Merhaba Emine Hanım, Erciyes FM (Sunucu: Nur Kandır) yayın sponsorluğu hakkında bilgi ve teklif görüşmesi talep ediyorum.",
+      "Merhaba Emine Hanım, Erciyes FM (Sunucu: Nur Kendir) yayın sponsorluğu hakkında bilgi ve teklif görüşmesi talep ediyorum.",
     ];
     if (sponsor) parts.push(`Firma / Marka: ${sponsor}`);
     if (pkg) {
