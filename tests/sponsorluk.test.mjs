@@ -131,19 +131,11 @@ test("URL search state parsing and share link generation round-trip accurately",
   assert.equal(roundTripped.customerMode, true);
 });
 
-test("buildWhatsAppUrl encodes Bahar ARAZ number, sponsor brand, package and hours", () => {
-  const state = {
-    sponsorName: "Erciyes Kurumsal",
-    broadcastHours: "18:00 - 20:00",
-    packageId: "gumus",
-  };
-  const url = Core.buildWhatsAppUrl(state);
-  assert.ok(url.startsWith("https://wa.me/905397352280?text="));
-  const decoded = decodeURIComponent(url.split("?text=")[1]);
-  assert.match(decoded, /Erciyes Kurumsal/);
-  assert.match(decoded, /Gümüş Sponsorluk \(25\.000 TL\)/);
-  assert.match(decoded, /18:00 - 20:00/);
-  assert.match(decoded, /Nur KENDİR/);
+test("index.html excludes WhatsApp links for Bahar ARAZ and preserves direct phone contact", () => {
+  const html = fs.readFileSync(path.join(projectRoot, "index.html"), "utf8");
+  assert.ok(!html.includes("wa.me/"), "index.html must not contain wa.me links");
+  assert.ok(!/whatsapp/i.test(html), "index.html must not contain WhatsApp references");
+  assert.ok(html.includes('href="tel:+905397352280"'));
 });
 
 test("renderState updates mock DOM safely without XSS interpretation", () => {
@@ -195,9 +187,7 @@ test("renderState updates mock DOM safely without XSS interpretation", () => {
     cueOpeningText: createEl(),
     cuePackageLabel: createEl(),
     selectPackage: createEl(),
-    heroWaLink: createEl(),
-    footerWaLink: createEl(),
-    customerBannerWa: createEl(),
+    footerContactSummary: createEl(),
     shareUrlPreview: createEl(),
   };
   const jingleCell = createEl();

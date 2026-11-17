@@ -8,8 +8,6 @@
   --copper-bright: #e67e3e;
   --gold: #c9861b;
   --blue-accent: #2563eb;
-  --whatsapp: #128c4e;
-  --whatsapp-hover: #0e703e;
   --bg-page: #f4f6fa;
   --surface: #ffffff;
   --surface-muted: #f8fafc;
@@ -299,15 +297,6 @@ body.is-customer-mode .slot-time-input {
 
 .btn-subtle:hover {
   background: #e2e8f0;
-}
-
-.btn-whatsapp {
-  background: var(--whatsapp);
-  color: #ffffff;
-}
-
-.btn-whatsapp:hover {
-  background: var(--whatsapp-hover);
 }
 
 /* ==================== CUSTOMER BANNER ==================== */

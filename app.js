@@ -6,7 +6,6 @@
   "use strict";
 
   const CONTACT_PHONE_DISPLAY = "0539 735 22 80";
-  const CONTACT_WHATSAPP_NUMBER = "905397352280";
   const DEFAULT_SLOT_PLACEHOLDER = "......... - .........";
   const DEFAULT_JINGLE_PLACEHOLDER = ".................";
   const DEFAULT_HOURS_PLACEHOLDER = "............... - ...............";
@@ -142,38 +141,6 @@
   function formatHoursDisplay(broadcastHours) {
     const cleaned = cleanText(broadcastHours, 40);
     return cleaned || DEFAULT_HOURS_PLACEHOLDER;
-  }
-
-  function buildWhatsAppMessage(state, overridePackageId) {
-    const pkgId =
-      overridePackageId && PACKAGES[overridePackageId]
-        ? overridePackageId
-        : state && state.packageId && PACKAGES[state.packageId]
-          ? state.packageId
-          : "";
-    const pkg = pkgId ? PACKAGES[pkgId] : null;
-    const sponsor = cleanText(state && state.sponsorName, 100);
-    const hours = cleanText(state && state.broadcastHours, 40);
-
-    const parts = [
-      "Merhaba Bahar Hanım, Erciyes FM (Sunucu: Nur KENDİR) yayın sponsorluğu hakkında bilgi ve teklif görüşmesi talep ediyorum.",
-    ];
-    if (sponsor) parts.push(`Firma / Marka: ${sponsor}`);
-    if (pkg) {
-      parts.push(
-        pkg.id === "ozel"
-          ? `İlgilenilen Seçenek: ${pkg.name}`
-          : `İlgilenilen Paket: ${pkg.name} (${pkg.price})`
-      );
-    }
-    if (hours) parts.push(`Planlanan Yayın Saatleri: ${hours}`);
-
-    return parts.join("\n");
-  }
-
-  function buildWhatsAppUrl(state, overridePackageId) {
-    const text = buildWhatsAppMessage(state, overridePackageId);
-    return `https://wa.me/${CONTACT_WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
   }
 
   function createDefaultState() {
@@ -393,23 +360,12 @@
       row.classList.toggle("is-selected", rowId === state.packageId && Boolean(state.packageId));
     });
 
-    // WhatsApp Bağlantıları
-    const generalWaUrl = buildWhatsAppUrl(state);
-    ["heroWaLink", "footerWaLink", "customerBannerWa"].forEach((id) => {
-      const el = doc.getElementById(id);
-      if (el) el.setAttribute("href", generalWaUrl);
-    });
-    doc.querySelectorAll("[data-wa-package]").forEach((anchor) => {
-      const pid = anchor.getAttribute("data-wa-package");
-      anchor.setAttribute("href", buildWhatsAppUrl(state, pid));
-    });
-
-    const footerWaSummary = doc.getElementById("footerWaSummary");
-    if (footerWaSummary) {
+    const footerContactSummary = doc.getElementById("footerContactSummary");
+    if (footerContactSummary) {
       const selectedSummary = [sponsor, pkg ? pkg.name : "", hours].filter(Boolean).join(" · ");
-      footerWaSummary.textContent = selectedSummary
-        ? `Hazır teklif bağlamı (${selectedSummary}) ile doğrudan Menajer Bahar ARAZ ile WhatsApp üzerinden iletişime geçin.`
-        : "Seçili sponsorluk bilgileriyle doğrudan Menajer Bahar ARAZ ile WhatsApp üzerinden iletişime geçin.";
+      footerContactSummary.textContent = selectedSummary
+        ? `Hazır teklif bağlamı (${selectedSummary}) ile doğrudan Menajer Bahar ARAZ ile telefon üzerinden iletişime geçin.`
+        : "Seçili sponsorluk bilgileriyle doğrudan Menajer Bahar ARAZ ile telefon üzerinden iletişime geçin.";
     }
 
     // Kapak Stüdyo Görseli (Varsayılan SVG veya Yüklenen Görsel)
@@ -710,7 +666,6 @@
 
   const ErciyesSponsorlukCore = {
     CONTACT_PHONE_DISPLAY,
-    CONTACT_WHATSAPP_NUMBER,
     DEFAULT_SLOT_PLACEHOLDER,
     DEFAULT_JINGLE_PLACEHOLDER,
     DEFAULT_HOURS_PLACEHOLDER,
@@ -723,8 +678,6 @@
     formatOpeningQuote,
     formatOpeningJingleDetail,
     formatHoursDisplay,
-    buildWhatsAppMessage,
-    buildWhatsAppUrl,
     createDefaultState,
     parseStateFromSearch,
     buildShareUrl,

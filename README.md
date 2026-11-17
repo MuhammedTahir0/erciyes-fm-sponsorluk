@@ -10,7 +10,7 @@ Erciyes FM (**Kayseri ve İç Anadolu**) akşam kuşağı yayını için hazırl
 
 ## Özellikler
 - **İnteraktif Vitrin & 3 Sayfalık Resmi Sunum Modu:** Üst sekmeden anında tam ekran web vitrin ile birebir 3 sayfalık sunum önizlemesi arasında geçiş yapılır.
-- **Canlı Firma ve Saat Özelleştirici:** `Sponsor Markası` girildiğinde kapak sayfası, hafta içi açılış jingle’ı (`“... ile Akşam Kuşağı Başlıyor”`), canlı anons simülatörü ve WhatsApp mesajı eşzamanlı güncellenir.
+- **Canlı Firma ve Saat Özelleştirici:** `Sponsor Markası` girildiğinde kapak sayfası, hafta içi açılış jingle’ı (`“... ile Akşam Kuşağı Başlıyor”`), canlı anons simülatörü ve teklif özeti eşzamanlı güncellenir.
 - **Akıllı Saat Dağıtımı:** `18:00 - 20:00` gibi bir yayın saati aralığı tek tıkla 6 program kuşağına (`Açılış & Jingle`, `Günün Teması & Müzik`, `Sponsor Kuşağı`, `Dinleyici Köşesi`, `Günün Notu & Şiir`, `Kapanış & Teşekkür`) orantılı dağıtılır; her satır ayrıca manuel düzenlenebilir.
 - **Paylaşılabilir Müşteri Linki (`?musteri=1`):** `?firma=...&saat=...&paket=...&musteri=1` parametreleriyle her reklamveren adayı için sadeleştirilmiş kişiselleştirilmiş link üretilir.
 - **Özel Kapak Görseli Yükleme:** Varsayılan vektörel "ON AIR" stüdyo görseli yerine istenirse özel bir stüdyo fotoğrafı kapakta ve PDF Sayfa 1'de kullanılabilir.
